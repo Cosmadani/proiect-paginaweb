@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url('background-image.jpg');
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+        main {
+            padding: 20px;
+            color: #333;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+
+            .map-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+            .social-links a {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        .reservation-form {
+            margin-top: 20px;
+        }
+
+            .reservation-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .reservation-form input[type="text"],
+            .reservation-form input[type="email"],
+            .reservation-form textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+
+            .reservation-form input[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+
+                .reservation-form input[type="submit"]:hover {
+                    background-color: #555;
+                }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+
+        <h3>Location</h3>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=Bulevardul Iuliu Maniu 59A, București 077042&amp;output=embed" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <h3>Social Media</h3>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yourbarbershop" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/yourbarbershop" target="_blank">Facebook</a>
+        </div>
+
+        <h3>Book a Reservation</h3>
+        <form class="reservation-form" action="booking.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Book Now">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Barbershop. All rights reserved.</p>
+    </footer>
+</body>
+</html>

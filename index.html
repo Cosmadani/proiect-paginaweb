@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbershop Website</title>
+    <style>
+        body {
+            background-image: url('background-image.jpg');
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+        main {
+            padding: 20px;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            table th, table td {
+                border: 1px solid #333;
+                padding: 8px;
+            }
+
+            table caption {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Scrolling text animation */
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 10s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Barbershop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Barbershop Services</h2>
+        <p>At our barbershop, we offer a wide range of services to keep you looking sharp:</p>
+        <ul>
+            <li>Haircuts</li>
+            <li>Shaves</li>
+            <li>Beard trims</li>
+            <li>Facial treatments</li>
+        </ul>
+
+        <img src="barbershop.jpg" alt="Barbershop Image" width="300" height="200">
+
+        <table>
+            <caption>Barbershop Schedule</caption>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>9:00 AM - 6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>9:00 AM - 6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00 AM - 6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9:00 AM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>9:00 AM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>9:00 AM - 4:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+
+        <div class="scrolling-text">
+            <p>Welcome to our Barbershop! Get the best haircut in town.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Barbershop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
